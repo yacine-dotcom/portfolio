@@ -1,0 +1,49 @@
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: calc(100% - 200px);
+    width: 100vh;
+  }
+  :root {
+    --big-font-size: 32px;
+    --h1-font-size: 32px;
+    --h2-font-size: 31px;
+    --h3-font-size: 20px;
+    --large-font-size: 15px;
+    --normal-font-size: 14px;
+    --small-font-size: 12px;
+    --smaller-font-size: 13px;
+    --tiny-font-size: 10px;
+  }
+  .grid {
+    gap: 25px;
+  }
+  .home__data {
+    padding-left: 10%;
+  }
+
+  .home__title {
+    font-size: var(--small-font-size);
+  }
+  .home__description {
+    font-size: var(--small-font-size);
+  }
+  .form__input-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form__input-div:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 576px) {
+  :root {
+    --big-font-size: 29px;
+    --h1-font-size: 26px;
+    --h2-font-size: 20px;
+    --h3-font-size: 17px;
+    --large-font-size: 13px;
+    --normal-font-size: 12px;
+    --small-font-size: 11px;
+    --smaller-font-size: 9px;
+    --tiny-font-size: 8px;
+  }
+}

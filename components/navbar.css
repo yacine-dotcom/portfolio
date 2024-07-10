@@ -1,0 +1,129 @@
+.nav__menu {
+  position: fixed;
+  inset-block: 0;
+  left: -120%;
+  width: 100%;
+  background-color: var(--container-color);
+  padding: 60px 30px;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 100;
+}
+
+.show__menu {
+  left: 0;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-block: 5px;
+  gap: 10px;
+}
+.nav__link,
+.nav__name {
+  color: var(--title-color);
+  font-size: 24px;
+}
+.nav__name {
+  font-weight: var(--weight-500);
+}
+.active-nav .nav__icon,
+.active-nav .nav__name {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 33px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--container-color);
+  cursor: pointer;
+}
+.nav__toggle span {
+  display: block;
+  border-radius: 2px;
+}
+
+/* =================  grand ecran minimum 1024px  */
+
+/* ========================== */
+
+@media screen and (min-width: 1024px) {
+  .nav__menu {
+    all: unset;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    position: fixed;
+    /* background-color: var(--first-color); */
+    inset-block: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  .nav__item {
+    margin-block: 20px;
+    padding: 5px;
+  }
+
+  .nav__link {
+    padding: 0;
+    background-color: var(--container-color);
+    border-radius: 50%;
+    cursor: pointer;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-bottom: none;
+  }
+
+  .nav__icon {
+    font-size: 20px;
+    margin-inline: auto;
+  }
+  .nav__name {
+    position: absolute;
+    right: 0;
+    top: -24px;
+    background-color: var(--first-color);
+    height: 100%;
+    font-size: var(--smal-font-size);
+    border-radius: 20px;
+    color: var(--text-white);
+    line-height: 50px;
+    padding-inline: 25px 31px;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border: 30px 0 0 30px;
+  }
+
+  .nav__link:hover .nav__name {
+    right: 19px;
+    color: var(--text-white);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__link:hover,
+  .active-nav {
+    background-color: var(--first-color);
+  }
+  .nav__link:hover .nav__icon,
+  .active-nav .nav__icon {
+    color: var(--text-white);
+  }
+}

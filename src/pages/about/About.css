@@ -1,0 +1,120 @@
+.info__list {
+  line-height: 2.6;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+.info__item {
+  font-size: var(--normal-font-size);
+  color: black;
+}
+.services__title {
+  color: black;
+  font-size: var(--h3-font-size);
+}
+.services {
+  /* width: 100%; */
+  justify-content: end;
+}
+
+.services__info {
+  max-width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 30%);
+  line-height: 2.3;
+  column-gap: 15px;
+  color: var(--text-white);
+  justify-content: center;
+}
+.services__box {
+  border-radius: 10px;
+  padding: 20px 30px;
+  line-height: 2.6;
+  background: var(--first-color);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.58);
+}
+.services__box:hover {
+  box-shadow: 0px 4px 8px purple;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.separator {
+  border-top: 1px solid var(--border-color);
+  max-width: 40%;
+  margin: 70px auto;
+}
+.skills__container {
+  grid-template-columns: repeat(4, 1fr);
+}
+.progress__circle {
+  text-align: center;
+  width: 60%;
+  margin-inline: auto;
+  font-weight: var(--weight-700);
+}
+.percentage {
+  font-weight: var(--weight-700);
+}
+.skill__icon {
+  width: 55%;
+  height: 45%;
+}
+
+@media screen and (max-width: 1300px) {
+  .services__info {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: calc(100% - 80px);
+  }
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services__info {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info__list {
+    line-height: 2.6;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+  }
+  .services__info {
+    margin-inline: 0 auto;
+  }
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skill__icon {
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .info__list {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__info {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    line-height: 2.3;
+  }
+  .button {
+    display: flex;
+  }
+  .progress__circle {
+    width: 70%;
+    margin-inline: auto;
+  }
+  .skill__icon {
+    width: 100%;
+    height: calc(100% - 55px);
+  }
+}
