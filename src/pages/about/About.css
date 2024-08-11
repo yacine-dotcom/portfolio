@@ -12,8 +12,7 @@
   font-size: var(--h3-font-size);
 }
 .services {
-  /* width: 100%; */
-  justify-content: end;
+  width: 100%;
 }
 
 .services__info {
@@ -116,5 +115,17 @@
   .skill__icon {
     width: 100%;
     height: calc(100% - 55px);
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .services__info {
+    width: 100%;
+    position: relative;
+    right: 50px;
   }
 }

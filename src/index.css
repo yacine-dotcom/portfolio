@@ -46,4 +46,7 @@
     --smaller-font-size: 9px;
     --tiny-font-size: 8px;
   }
+  .container {
+    width: calc(520px - 5px);
+  }
 }

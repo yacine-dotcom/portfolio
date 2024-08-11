@@ -7,6 +7,9 @@ import {
   FaTwitter,
   FaYoutube,
   FaDribbble,
+  FaLinkedinIn,
+  FaMailBulk,
+  FaEnvelope,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import "./Contact.css";
@@ -102,17 +105,14 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact__socials">
-            <a href="www.facbook.com">
-              <FaFacebookF className="contact__social-link" />
+            <a href="https://www.linkedin.com/in/yacine-taleb-361a221a4/">
+              <FaLinkedinIn className="contact__social-link" />
             </a>
-            <a href="">
-              <FaTwitter className="contact__social-link" />
-            </a>
-            <a href="">
+            <a href="https://www.youtube.com/@yacinevlogsdz1895">
               <FaYoutube className="contact__social-link" />
             </a>
-            <a href="">
-              <FaDribbble className="contact__social-link" />
+            <a href="mailto:yacinetaleb995@gmail.com">
+              <FaEnvelope className="contact__social-link" />
             </a>
           </div>
         </div>

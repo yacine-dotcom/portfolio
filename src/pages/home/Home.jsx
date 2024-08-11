@@ -12,13 +12,17 @@ const Home = () => {
             <span className="">
               Je suis Yacine Taleb .<br />
             </span>{" "}
-            Dévloppeur web
+            Développeur web
           </h1>
           <p className="home__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quo
-            asperiores, totam laborum nemo at, nesciunt deleniti cum voluptate
-            incidunt vitae tenetur tempora saepe ex molestiae pariatur sed, hic
-            numquam.
+            Je m'appelle Yacine Taleb, diplômé en Master 2 Conception et
+            Intégration Multimédia à l'Université Lumière Lyon 2. Après une
+            période de 6 mois de réflexion professionnelle, Je suis actuellement
+            à la recherche d'une nouvelle opportunité en développement web.
+            Passionné par les technologies web, je suis prêt à apporter mes
+            compétences et mon enthousiasme à votre équipe. Je suis ouvert à
+            toutes les opportunités et serais ravi d'échanger avec vous sur des
+            projets passionnants. N'hésitez pas à me contacter
           </p>
           <Link to="About" className="button">
             Lire plus sur Moi
