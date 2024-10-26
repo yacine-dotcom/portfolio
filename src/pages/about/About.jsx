@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Cv from "../../assets/CV-Développeur-WEB-08-24.pdf";
+import Cv from "../../assets/CV-WEBDEV.pdf";
 import "./About.css";
 import Info from "./Info";
 import Services from "./Services";
@@ -22,7 +22,12 @@ const About = () => {
               <ul className="info__list grid">
                 <Info />
               </ul>
-              <a className="button" href={Cv} download="Cv" target="_blank">
+              <a
+                className="button"
+                href={Cv}
+                download="Cv-Yacine-Taleb"
+                target="_blank"
+              >
                 Télécharger Mon Cv{" "}
                 <span className="button__icon">
                   {" "}
