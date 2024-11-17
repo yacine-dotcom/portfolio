@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Cv from "../../assets/CV-WEBDEV.pdf";
+import Cv from "../../assets/CV-MR-YACINE-TALEB.pdf";
 import "./About.css";
 import Info from "./Info";
 import Services from "./Services";
